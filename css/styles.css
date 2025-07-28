@@ -707,10 +707,11 @@ button {
   gap: 16px;
 }
 
-.label-wrappe {
+.label-wrapper {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 8px;
 }
 
 .text-wrapper {
@@ -727,6 +728,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -815,11 +817,14 @@ button {
   border-radius: 2px;
   align-items: center;
   justify-content: center;
-  display: flex;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-part {
+  display: inline-flex;
 }
 
 .checkbox-input:checked + .checkbox-label .checkbox-part {
